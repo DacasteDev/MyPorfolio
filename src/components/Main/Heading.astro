@@ -1,0 +1,66 @@
+<section class="heading_container">
+    <div>
+        <div class="title">
+            <h1>
+                Hi 👋, I’m <br>
+                <span class="one_spam">David Castellanos</span> <br>
+                <span class="second_spam">Front-end developer</span> <br> <br>
+            </h1>   
+        </div>
+        <div class="text">
+            <p>
+                I'm a front-end developer based in Colombia City, I have experience in building websites and web applications.
+            </p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="../../../public/David.webp" alt="David Castellanos">
+    </div>
+    
+</section>
+
+
+
+<style>
+    .heading_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 4rem;
+        margin: 0 auto;
+        padding: 4rem 0;
+
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+
+    }
+
+    .photo img {
+        width: 100%;	
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .one_spam {
+        color: var(--primary-color);
+    }
+
+    .second_spam {
+        color: var(--secondary-color);
+    }
+
+    @media screen and (max-width: 599px) {
+        .heading_container {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    .text {
+        max-width: 450px;
+    }
+</style>

@@ -1,0 +1,26 @@
+
+@import '@fontsource-variable/inter';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables globales */
+  :root {
+    --font-main: 'Inter variable', sans-serif;
+    --primary-color: #58D3F7;
+    --secondary-color: #E70FAA;
+    --tertiary-color: #071120;
+    --white: #ffffff;
+    --black: #000000;
+    
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: var(--font-main);
+    background-color: var(--tertiary-color);
+    color: #ffffff;
+  }
