@@ -1,28 +1,50 @@
 ---
 import foto from '../../images/David.webp';
+import githubicon from '../icons/Github.svg';
+import linkedinicon from '../icons/Linkedin.svg';
+import mailicon from '../icons/Mail.svg';	
 ---
 
 <section class="heading_container">
     <div>
         <div class="title">
             <h1>
-                Hi 👋, I’m <br>
+                Hey 👋, soy <br>
                 <span class="one_spam">David Castellanos</span> <br>
                 <span class="second_spam">Front-end developer</span> <br> <br>
             </h1>   
         </div>
         <div class="text">
             <p>
-                I'm a front-end developer based in Colombia City, I have experience in building websites and web applications.
+                Diseño y Desarrollo Webs profesionales, Webs que convierten y hacen crecer tu negocio. <br> <br>
+                ¡Trabajemos Juntos! 🤝
             </p>
+        </div>
+        <div class="social">
+            <a href="">
+                <img src={linkedinicon.src} alt="Linkedin icono">
+                Linkedin
+            </a>
+            <a href="">
+                <img src={mailicon.src}alt="Correo icono">
+                Mail
+            </a>
+            <a href="">
+                <img src={githubicon.src} alt="Github icono">
+                Github
+            </a>
         </div>
     </div>
     <div class="photo">
         <img src={foto.src} alt="David Castellanos">
     </div>
+
     
 </section>
 
+<div class="bulding"> 
+    <p>Estamos contruyendo estas secciones de la pagina 🔨</p>
+</div>
 
 
 <style>
@@ -66,5 +88,28 @@ import foto from '../../images/David.webp';
 
     .text {
         max-width: 450px;
+       
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-items: left;
+        gap: 1rem;
+        
+        a {
+            color : var(--white-color);
+            text-decoration: none;
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            border: 1px solid var(--primary-color);
+            margin: 2rem 0;
+        }
+    }
+    
+    
+
+    .bulding {
+        text-align: center;
     }
 </style>
