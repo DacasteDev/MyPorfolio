@@ -9,7 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@fontsource-variable/inter": "^5.2.5",
     "astro": "^5.5.3"
+=======
+    "astro": "^5.5.2"
+>>>>>>> f46ca5f10ec110a5dd80e18fc7b05802a777c50c
   }
 }
