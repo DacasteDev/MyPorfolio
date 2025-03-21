@@ -1,4 +1,4 @@
-<section class="about_me_container" id="sobre_mi">
+<section class="about_me_container" id="sobre_mi">	
     <div>
         <h2 class="title" >
             Sobre mí
@@ -13,19 +13,22 @@
     </div>
 
 </section>
-<br><br><br><br><br><br><br><br><br><br>
 <style>
     .about_me_container {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
-        padding: 3rem 0;
+        padding: 0 0 0 3rem 0;
         
         .title{
             text-wrap: nowrap;
         }
     }
 
-
-
+    @media screen and (max-width: 599px) {
+        .about_me_container{
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
 </style>
