@@ -6,7 +6,7 @@ import linkedinicon from '../icons/linkedin.svg';
 ---
 
 <section class="heading_container">
-    <div>
+    <div class="text_container">
         <div class="title">
             <h1>
                 Hey 👋, soy <br>
@@ -23,7 +23,7 @@ import linkedinicon from '../icons/linkedin.svg';
         <div class="social">
             <a href="#">
                 <img src={mailicon.src}alt="Correo icono">
-                correo
+                Correo
             </a>
             <a href="#">
                 <img src={linkedinicon.src} alt="Linkedin icono">
@@ -38,8 +38,6 @@ import linkedinicon from '../icons/linkedin.svg';
     <div class="photo">
         <img src={foto.src} alt="David Castellanos">
     </div>
-
-    
 </section>
 
 <div class="bulding"> 
@@ -55,29 +53,61 @@ import linkedinicon from '../icons/linkedin.svg';
         justify-content: space-evenly;
         gap: 4rem;
         margin: 0 auto;
-        padding: 4rem 0;
-
-    }
-
-    .photo {
-        width: 200px;
-        height: 200px;
+        padding: 3rem 0;
         overflow: hidden;
 
-    }
+        .text_container{
+            .title{
 
-    .photo img {
-        width: 100%;	
-        height: 100%;
-        object-fit: contain;
-    }
+                .one_spam {
+                    color: var(--primary-color);
+                }
+            
+                .second_spam {
+                    color: var(--secondary-color);
+                }
+            }
+    
+            .text{
+                max-width: 450px; 
+            }
 
-    .one_spam {
-        color: var(--primary-color);
-    }
+            .social {
+                display: flex;
+                flex-direction: row;
+                justify-items: left;
+                gap: 1rem;
+                a {
+                    color : var(--white-color);
+                    text-decoration: none;
+                    padding: .5rem 1rem;
+                    border-radius: 1rem;
+                    border: 1px solid var(--primary-color);
+                    margin: 2rem 0;
+                    font-size:.8rem;
+                    display: flex;
+                    align-items: center;
+                    
+                    img{
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
 
-    .second_spam {
-        color: var(--secondary-color);
+        
+        .photo {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+
+            img{
+                width: 100%;	
+                height: 100%;
+                object-fit: contain;
+            };
+        }
+
     }
 
     @media screen and (max-width: 599px) {
@@ -86,32 +116,8 @@ import linkedinicon from '../icons/linkedin.svg';
             gap: 2rem;
         }
     }
-
-    .text {
-        max-width: 450px;
-       
-    }
-
-    .social {
-        display: flex;
-        flex-direction: row;
-        justify-items: left;
-        gap: 1rem;
-        
-        
-        a {
-            color : var(--white-color);
-            text-decoration: none;
-            padding: .5rem 1rem;
-            border-radius: 1rem;
-            border: 1px solid var(--primary-color);
-            margin: 2rem 0;
-            font-size:.8rem;
-        }
-    }
     
     
-
     .bulding {
         text-align: center;
     }
