@@ -11,7 +11,7 @@ import linkedinicon from '../icons/linkedin.svg';
             <h1>
                 Hey 👋, soy <br>
                 <span class="one_spam">David Castellanos</span> <br>
-                <span class="second_spam">Front-end developer</span> <br> <br>
+                <span class="second_spam">Front-end developer</span> 
             </h1>   
         </div>
         <div class="text">
@@ -21,15 +21,24 @@ import linkedinicon from '../icons/linkedin.svg';
             </p>
         </div>
         <div class="social">
-            <a href="#">
+            <a href="dscastellanos.sanchez@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                 <img src={mailicon.src}alt="Correo icono">
                 Correo
             </a>
-            <a href="#">
+            <a href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img src={linkedinicon.src} alt="Linkedin icono">
                 Linkedin
             </a>
-            <a href="#">
+            <a href="https://github.com/DacasteDev"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img src={githubicon.src} alt="Github icono">
                 Github
             </a>
@@ -51,6 +60,9 @@ import linkedinicon from '../icons/linkedin.svg';
         overflow: hidden;
 
         .text_container{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;	
             .title{
 
                 .one_spam {
@@ -77,7 +89,6 @@ import linkedinicon from '../icons/linkedin.svg';
                     padding: .5rem 1rem;
                     border-radius: 1rem;
                     border: 1px solid var(--primary-color);
-                    margin: 2rem 0;
                     font-size:.8rem;
                     display: flex;
                     align-items: center;
