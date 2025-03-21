@@ -28,7 +28,7 @@ import linkedinicon from '../icons/linkedin.svg';
                 <img src={mailicon.src}alt="Correo icono">
                 Correo
             </a>
-            <a href="#"
+            <a href="https://www.linkedin.com/in/davidcastellanosdev/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -56,15 +56,16 @@ import linkedinicon from '../icons/linkedin.svg';
         justify-content: space-between;
         gap: 4rem;
         margin: 0 auto;
-        padding: 3rem 0;
+        padding: 5rem 0;
         overflow: hidden;
 
         .text_container{
             display: flex;
             flex-direction: column;
             gap: 2rem;	
-            .title{
 
+            .title{
+                font-size: 1.6rem;
                 .one_spam {
                     color: var(--primary-color);
                 }
@@ -75,7 +76,9 @@ import linkedinicon from '../icons/linkedin.svg';
             }
     
             .text{
+                font-size: 1.3rem;
                 max-width: 450px; 
+                font-weight: 200;
             }
 
             .social {
@@ -118,7 +121,7 @@ import linkedinicon from '../icons/linkedin.svg';
     @media screen and (max-width: 599px) {
         .heading_container {
             flex-direction: column;
-            gap: 2rem;
+            gap: 3rem;
         }
     }
     
