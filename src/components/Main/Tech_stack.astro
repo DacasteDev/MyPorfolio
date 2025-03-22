@@ -1,0 +1,68 @@
+---
+import Githubicon from '../icons/Github.astro';
+---
+
+<section class="Tech_stack_container">
+    <div>
+        <h3 class="title" >
+            Tecnologías que uso:
+        </h3>
+    </div>
+    <div class="grid">
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        <div class="item">
+            <Githubicon size={""} color="white" />
+        </div>
+        
+    </div>
+</section>
+
+<style>
+
+    .Tech_stack_container{
+        display: flex;
+        flex-direction: column;
+        max-width: 750px;
+        margin: 2rem auto;
+        gap: 4rem;
+        overflow: hidden;
+        
+        .title{
+            text-align: center;
+            font-size: 2rem;
+            
+        }
+    }
+   
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+
+        .item{
+            width: 90px;
+            margin: 0 auto;
+        }
+    }   
+
+</style>

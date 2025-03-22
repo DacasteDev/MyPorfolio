@@ -1,6 +1,6 @@
 ---
 import foto from '../../images/David.webp';
-import githubicon from '../icons/Github.svg';
+import Githubicon from '../icons/Github.astro';
 import mailicon from '../icons/mail.svg';	
 import linkedinicon from '../icons/linkedin.svg';
 ---
@@ -39,9 +39,11 @@ import linkedinicon from '../icons/linkedin.svg';
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <img src={githubicon.src} alt="Github icono">
+            <span> 
+                <Githubicon size={"15px"} color="white" />
+            <span/>
                 Github
-            </a>
+           </a>
         </div>
     </div>
     <div class="photo">
@@ -86,7 +88,7 @@ import linkedinicon from '../icons/linkedin.svg';
                 flex-direction: row;
                 justify-items: left;
                 gap: 1rem;
-                a {
+                a{
                     color : var(--white-color);
                     text-decoration: none;
                     padding: .5rem 1rem;
@@ -100,6 +102,16 @@ import linkedinicon from '../icons/linkedin.svg';
                         margin-right: .5rem;
                     }
                 }
+                span{
+                    display: flex;
+                    align-items: center;
+
+                    svg{
+                        margin-right: .5rem;
+                    }
+                }
+
+                
             }
         }
 
