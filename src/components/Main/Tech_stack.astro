@@ -1,25 +1,29 @@
 ---
 import Githubicon from '../icons/Github.astro';
+import Htmlicon from '../icons/htmlicon.astro';
+import JavaScript from '../icons/JavaScript.astro';
+import Astroicon from '../icons/Astroicon.astro';
+import Cssicon from '../icons/CSSicon.astro';
 ---
 
 <section class="Tech_stack_container">
     <div>
         <h3 class="title" >
-            Tecnologías que uso:
+            Tecnologías que uso
         </h3>
     </div>
     <div class="grid">
         <div class="item">
-            <Githubicon size={""} color="white" />
+            <Htmlicon size={""} color="white" />
         </div>
         <div class="item">
-            <Githubicon size={""} color="white" />
+            <Cssicon size={"100%"} color="white" />
         </div>
         <div class="item">
-            <Githubicon size={""} color="white" />
+            <JavaScript size={"100%"} color="white" />
         </div>
         <div class="item">
-            <Githubicon size={""} color="white" />
+            <Astroicon size={"100%"} color="white" />
         </div>
         <div class="item">
             <Githubicon size={""} color="white" />
@@ -57,11 +61,13 @@ import Githubicon from '../icons/Github.astro';
     .grid{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
+        overflow: hidden;
 
         .item{
-            width: 90px;
-            margin: 0 auto;
+            width: 70px;
+            height: 70px;
+            margin: 2rem auto;
+            object-fit: ;
         }
     }   
 
