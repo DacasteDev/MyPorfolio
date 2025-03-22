@@ -10,6 +10,13 @@
 <style>
     
     .header_container {
+        position: fixed;
+        top: 10px; /* Se mantiene en la parte superior */
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Asegura que esté perfectamente centrado */
+        z-index: 100; /* Se coloca encima de otros elementos */
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para destacar */
         overflow: hidden;
 
         .nav_container {
@@ -18,8 +25,9 @@
             display: flex;
             justify-content: space-evenly;
             border-radius: 1rem;
-            background-color: var(--tertiary-color);
+            background-color: #071120d7;
             border: .5px solid var(--primary-color);
+            position: sticky;
            
             a {
                 color: var(--white);
